@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-
+/* Naoya */
 struct t {
         int a;
         void (*funptr) (int * a);
