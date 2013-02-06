@@ -1,0 +1,18 @@
+........................................................................................
+What does int (*f)(int (*a)[5]) mean in C? 
+
+it's pretty simple: int *p means that *p is an int; int a[5] means that a[i] is an int.
+
+int (*f)(int (*a)[5])
+
+Means that *f is a function, *a is an array of five integers, so f is a function taking a pointer to an array of five integers, and returning int. However, in C it isn't useful to pass a pointer to an array.
+
+C declarations very rarely get this complicated.
+
+Also, you can clarify using typedefs:
+
+typedef int vec5[5];
+int (*f)(vec5 *a);
+
+
+................................................................................
