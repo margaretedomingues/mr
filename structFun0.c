@@ -53,6 +53,41 @@ int (*f)(vec5 *a);
 
 
 ................................................................................
+					struct and typedef struct
+
+C language: How to use STRUCT (typedef, “->”)
+From web: http://myprogrammingblog.com/2011/07/18/c-language-how-to-use-struct-typedef/
+
+*/
+01	/* HOW TO USE STRUCTS, TYPEDEF */
+02
+03
+/*       #include <stdio.h>
+04	 
+05	/ * struct is used in  C language to group data * /
+06	/ * This is how to use struct without typedef
+07	struct employee {
+08	  char *first_name;
+09	  char *last_name;
+10	  int age;
+11	  int emp_number;
+12	  float salary;        
+13	};
+14	* /
+15	 
+16 / * Typedef makes struct much more readable !! 
+17	 
+18	typedef struct {
+19	  char *first_name;
+20	  char *last_name;
+21	  int age;
+22	  int emp_number;
+23	  float salary;        
+24	}Employee;
+25	 
+
+
+
 */
 
 
