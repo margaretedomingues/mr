@@ -1,7 +1,7 @@
 /* This example explore the ideias of inheritance in C and also that the idea of how we can call
  * also functions types in this processes.
  * 
- * Elaborate by Margarete and Nagoya based in a gts.h design
+ * Elaborated by Margarete and Naoya based in a gts.h design
  * 
  * date: 15th Feb 2013
  * 
