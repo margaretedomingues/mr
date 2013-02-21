@@ -1,0 +1,21 @@
+1 2 GfsSimulation GfsBox GfsGEdge {} {
+  GfsTime { end = 50 }
+  GfsRefine 6
+  GfsInit {} {
+    U = (0.5 - rand()/(double)RAND_MAX)
+    V = (0.5 - rand()/(double)RAND_MAX)
+  }  
+  GfsAdaptVorticity{ istep=1 } {maxlevel = 6 cmax = 1e-2 }
+  GfsOutputTime            { istep = 10 } stdout
+  GfsOutputProjectionStats { istep = 10 } stdout
+  GfsOutputPPM             { step = 0.1 } vorticity.ppm {
+   v = Vorticity   min = -10   max = 10
+ }
+ GfsOutputSimulation{ step=0.1 } 2Diso-%3.1f.gfs {
+  variables = U,V,P
+ }			      
+}
+GfsBox {}
+1 1 right
+1 1 top
+
