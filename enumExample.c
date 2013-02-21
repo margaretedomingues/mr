@@ -1,4 +1,8 @@
-/* Example  enum use that is used in the gts type
+/* Example  enum: it uses  the gts.h  ideas
+ * Tip: In C "enum" must be an "int type". 
+ * enum is used as an alternative to "define" directive
+( see http://msdn.microsoft.com/en-us/library/whbyts4t%28v=vs.80%29.aspx)
+
  by Naoya, Margarete
  date 2013/02/21
  */
